@@ -55,7 +55,7 @@ const HeroSection = () => {
           className="text-center max-w-6xl mx-auto"
         >
           {/* Badge */}
-          <motion.div variants={itemVariants} className="mb-8">
+          <motion.div variants={itemVariants} className="mb-8 mt-12">
             <div className="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-lg border border-primary-100">
               <Zap className="w-4 h-4 text-primary-600 mr-2" />
               <span className="text-sm font-medium text-gray-700">
@@ -172,7 +172,7 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
@@ -184,7 +184,7 @@ const HeroSection = () => {
             <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-bounce"></div>
           </div>
         </div>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 };

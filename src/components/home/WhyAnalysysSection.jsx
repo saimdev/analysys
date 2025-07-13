@@ -57,6 +57,18 @@ const WhyAnalysysSection = () => {
   return (
     <section className="section-padding bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div variants={itemVariants}>
+          <h2 className="section-title text-left leading-snug">
+            Drowning in News Footage?
+            <br />
+            <span className="gradient-text">Analysys is Your Lifeline.</span>
+          </h2>
+          <p className="text-xl text-gray-600 leading-relaxed mb-6">
+            Stop spending hours searching through endless video files. Our
+            AI-powered platform transforms how media professionals discover,
+            analyze, and repurpose broadcast content.
+          </p>
+        </motion.div>
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -66,21 +78,6 @@ const WhyAnalysysSection = () => {
         >
           {/* Left Content */}
           <div className="space-y-8">
-            <motion.div variants={itemVariants}>
-              <h2 className="section-title text-left mb-6">
-                Drowning in News Footage?
-                <br />
-                <span className="gradient-text">
-                  Analysys is Your Lifeline.
-                </span>
-              </h2>
-              <p className="text-xl text-gray-600 leading-relaxed">
-                Stop spending hours searching through endless video files. Our
-                AI-powered platform transforms how media professionals discover,
-                analyze, and repurpose broadcast content.
-              </p>
-            </motion.div>
-
             {/* Feature List */}
             <motion.div variants={itemVariants} className="space-y-6">
               {WHY_ANALYSYS_FEATURES.map((feature, index) => {
