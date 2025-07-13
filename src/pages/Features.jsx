@@ -9,7 +9,7 @@ import FeaturesCTA from "../components/features/FeaturesCTA";
 
 const Features = () => {
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen">
       <FeaturesHero />
       <FeaturesOverview />
       <FeatureDetails />
