@@ -435,7 +435,7 @@ const ContactFormSection = () => {
                     <Mail className="w-6 h-6 mt-1 flex-shrink-0" />
                     <div>
                       <div className="font-semibold mb-1">Email</div>
-                      <div className="opacity-90">info@analysys.com</div>
+                      <div className="opacity-90">info@analysys.tech</div>
                       <div className="text-sm opacity-75">
                         Response within 24 hours
                       </div>
@@ -447,9 +447,9 @@ const ContactFormSection = () => {
                     <div>
                       <div className="font-semibold mb-1">Office</div>
                       <div className="opacity-90">
-                        D-1 Sea Breeze, Shershah Block
+                        BesTel, LLC, 121 W. Lamberth Road,
                         <br />
-                        New Garden Town, Lahore, Pakistan
+                        Suite A, Sherman, TX 75092, USA
                       </div>
                     </div>
                   </div>

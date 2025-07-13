@@ -39,7 +39,7 @@ const ContactHero = () => {
       icon: Mail,
       title: "Email Us",
       description: "Send us a detailed message",
-      info: "info@analysys.com",
+      info: "info@analysys.tech",
       availability: "Response within 24 hours",
       color: "from-green-500 to-green-600",
     },

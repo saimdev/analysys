@@ -3,10 +3,10 @@ export const COMPANY_INFO = {
   name: "Analysys",
   tagline: "AI-Powered Broadcast Monitoring & Media Intelligence",
   description: "Ingest. Record. Analyze. Search. Repurpose. All in Real-Time.",
-  address: "D-1 Sea Breeze, Shershah Block, New Garden Town, Lahore, Pakistan",
+  address: "BesTel, LLC, 121 W. Lamberth Road, Suite A, Sherman, TX 75092, USA",
   phone: "+92 42 3584 6201 / 6202",
-  email: "info@analysys.com",
-  website: "https://analysys.com",
+  email: "info@analysys.tech",
+  website: "https://analysys.tech",
   copyright: "© 2025 Analysys. All Rights Reserved.",
 };
 

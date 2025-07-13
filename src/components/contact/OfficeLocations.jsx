@@ -105,11 +105,11 @@ const OfficeLocations = () => {
                     <div>
                       <div className="font-semibold text-gray-900">Address</div>
                       <div className="text-gray-600">
-                        D-1 Sea Breeze, Shershah Block
+                        BesTel, LLC, 121 W. Lamberth Road,
                         <br />
-                        New Garden Town, Lahore
+                        Suite A, Sherman,
                         <br />
-                        Punjab, Pakistan
+                        TX 75092, USA
                       </div>
                     </div>
                   </div>
@@ -128,7 +128,7 @@ const OfficeLocations = () => {
                     <Mail className="w-5 h-5 text-gray-400 mt-1 flex-shrink-0" />
                     <div>
                       <div className="font-semibold text-gray-900">Email</div>
-                      <div className="text-gray-600">info@analysys.com</div>
+                      <div className="text-gray-600">info@analysys.tech</div>
                     </div>
                   </div>
                 </div>
