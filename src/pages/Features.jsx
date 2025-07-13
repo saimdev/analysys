@@ -1,18 +1,22 @@
 import React from "react";
+import FeaturesHero from "../components/features/FeaturesHero";
+import FeaturesOverview from "../components/features/FeaturesOverview";
+import FeatureDetails from "../components/features/FeatureDetails";
+import FeatureComparison from "../components/features/FeatureComparison";
+import TechnicalSpecs from "../components/features/TechnicalSpecs";
+import IntegrationSection from "../components/features/IntegrationSection";
+import FeaturesCTA from "../components/features/FeaturesCTA";
 
 const Features = () => {
   return (
-    <div className="min-h-screen pt-20 bg-gray-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-6">
-            Features Page
-          </h1>
-          <p className="text-xl text-gray-600">
-            Detailed features page coming soon...
-          </p>
-        </div>
-      </div>
+    <div className="min-h-screen pt-20">
+      <FeaturesHero />
+      <FeaturesOverview />
+      <FeatureDetails />
+      <TechnicalSpecs />
+      <FeatureComparison />
+      <IntegrationSection />
+      <FeaturesCTA />
     </div>
   );
 };
