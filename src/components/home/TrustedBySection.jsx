@@ -43,47 +43,91 @@ const TrustedBySection = () => {
             Trusted by leading organizations worldwide
           </motion.h2>
 
-          {/* Client Logos Slider */}
+          {/* Client Logos Grid */}
           <motion.div
             variants={itemVariants}
-            className="relative overflow-hidden"
+            className="relative overflow-hidden py-8"
           >
-            <div className="flex items-center justify-center space-x-8 md:space-x-12 lg:space-x-16">
-              {CLIENTS.map((client, index) => (
+            {/* Desktop View - Single Row */}
+            <div className="hidden lg:flex items-center justify-center space-x-12 xl:space-x-16">
+              {CLIENTS.slice(0, 6).map((client, index) => (
                 <motion.div
                   key={client.id}
                   variants={itemVariants}
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ duration: 0.2 }}
-                  className="flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300"
+                  whileHover={{ scale: 1.1, y: -8 }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
+                  className="flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer"
                 >
-                  <img
-                    src={client.logo}
-                    alt={client.alt}
-                    className="h-12 md:h-16 lg:h-20 w-auto opacity-60 hover:opacity-100 transition-opacity duration-300"
-                    loading="lazy"
-                  />
+                  <div className="flex items-center justify-center h-24 w-32 p-2">
+                    <img
+                      src={client.logo}
+                      alt={client.alt}
+                      className="max-h-20 max-w-28 w-auto h-auto opacity-60 hover:opacity-100 transition-opacity duration-300 object-contain"
+                      loading="lazy"
+                      onError={(e) => {
+                        // Fallback to a placeholder if image fails to load
+                        e.target.src = `https://via.placeholder.com/120x80/e5e7eb/6b7280?text=${encodeURIComponent(
+                          client.name
+                        )}`;
+                      }}
+                    />
+                  </div>
                 </motion.div>
               ))}
             </div>
 
-            {/* Infinite scroll animation for larger screens */}
-            <div className="hidden lg:block absolute top-0 left-0 w-full h-full pointer-events-none">
-              <div className="animate-scroll flex items-center justify-center space-x-16">
-                {CLIENTS.concat(CLIENTS).map((client, index) => (
-                  <div
-                    key={`scroll-${index}`}
-                    className="flex-shrink-0 grayscale opacity-60"
-                  >
+            {/* Tablet View - Two Rows */}
+            <div className="hidden md:grid lg:hidden grid-cols-4 gap-8 items-center justify-items-center">
+              {CLIENTS.slice(0, 8).map((client, index) => (
+                <motion.div
+                  key={client.id}
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.1, y: -6 }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
+                  className="grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer"
+                >
+                  <div className="flex items-center justify-center h-20 w-28 p-2">
                     <img
                       src={client.logo}
                       alt={client.alt}
-                      className="h-20 w-auto"
+                      className="max-h-16 max-w-24 w-auto h-auto opacity-60 hover:opacity-100 transition-opacity duration-300 object-contain"
                       loading="lazy"
+                      onError={(e) => {
+                        e.target.src = `https://via.placeholder.com/100x64/e5e7eb/6b7280?text=${encodeURIComponent(
+                          client.name
+                        )}`;
+                      }}
                     />
                   </div>
-                ))}
-              </div>
+                </motion.div>
+              ))}
+            </div>
+
+            {/* Mobile View - Grid */}
+            <div className="grid md:hidden grid-cols-2 gap-8 items-center justify-items-center">
+              {CLIENTS.slice(0, 6).map((client, index) => (
+                <motion.div
+                  key={client.id}
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.05, y: -4 }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
+                  className="grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer"
+                >
+                  <div className="flex items-center justify-center h-16 w-24 p-2">
+                    <img
+                      src={client.logo}
+                      alt={client.alt}
+                      className="max-h-12 max-w-20 w-auto h-auto opacity-60 hover:opacity-100 transition-opacity duration-300 object-contain"
+                      loading="lazy"
+                      onError={(e) => {
+                        e.target.src = `https://via.placeholder.com/80x48/e5e7eb/6b7280?text=${encodeURIComponent(
+                          client.name
+                        )}`;
+                      }}
+                    />
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </motion.div>
 

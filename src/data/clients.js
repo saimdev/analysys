@@ -1,38 +1,38 @@
 export const CLIENTS = [
   {
     id: 1,
-    name: "Client 1",
+    name: "DEMP",
     logo: "/images/clients/1.png",
-    alt: "Client 1 Logo",
+    alt: "DEMP Logo",
   },
   {
     id: 2,
-    name: "Client 2",
+    name: "DGPR",
     logo: "/images/clients/2.png",
-    alt: "Client 2 Logo",
+    alt: "DGPR Logo",
   },
   {
     id: 3,
-    name: "Client 3",
+    name: "Pakistan Navy",
     logo: "/images/clients/3.png",
-    alt: "Client 3 Logo",
+    alt: "Pakistan Navy Logo",
   },
   {
     id: 4,
-    name: "Client 4",
+    name: "PTCL",
     logo: "/images/clients/4.png",
-    alt: "Client 4 Logo",
+    alt: "PTCL Logo",
   },
   {
     id: 5,
-    name: "Client 5",
-    logo: "/images/clients/5.png",
-    alt: "Client 5 Logo",
+    name: "DGPR PTCL",
+    logo: "/images/clients/1.png", // Repeat for demo
+    alt: "DGPR PTCL Logo",
   },
   {
     id: 6,
-    name: "Client 6",
-    logo: "/images/clients/6.png",
-    alt: "Client 6 Logo",
+    name: "Pakistan Navy",
+    logo: "/images/clients/2.png", // Repeat for demo
+    alt: "Pakistan Navy Logo",
   },
 ];
